@@ -1,0 +1,6 @@
+github.com/go-chi/chi v1.5.5 h1:vOB/HbEMt9QqBqErz07QehcOKHaWFtuj87tTDVz2qXE=
+github.com/go-chi/chi v1.5.5/go.mod h1:C9JqLr3tIYjDOZpzn+BCuxY8z8vmca43EeMgyZt7irw=
+github.com/syumai/workers v0.23.1 h1:QWz4NUnCxqM9JDVxTCnOp5ScyR+8xBWOy1sj15/hjvw=
+github.com/syumai/workers v0.23.1/go.mod h1:ZnqmdiHNBrbxOLrZ/HJ5jzHy6af9cmiNZk10R9NrIEA=
+github.com/syumai/workers v0.26.3 h1:AF+IBaRccbR4JIj2kNJLJblruPFMD/pAbzkopejGcP8=
+github.com/syumai/workers v0.26.3/go.mod h1:ZnqmdiHNBrbxOLrZ/HJ5jzHy6af9cmiNZk10R9NrIEA=

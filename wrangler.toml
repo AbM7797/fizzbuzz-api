@@ -1,0 +1,32 @@
+# Base configuration
+name = "fizzbuzz-api"
+main = "./build/worker.mjs"
+compatibility_date = "2024-04-15"
+
+kv_namespaces = [
+  # This section will be ignored in local development but used as a fallback
+  { binding = "STATS", id = "<ignored>", preview_id = "<ignored>" }
+]
+
+[build]
+command = "make build"
+
+# Local Environment
+[env.local]
+kv_namespaces = [
+  { binding = "STATS", id = "<ignored>", preview_id = "<ignored>" }
+]
+
+# Staging Environment
+[env.staging]
+kv_namespaces = [
+  { binding = "STATS", id = "your-staging-kv-id", preview_id = "your-staging-preview-id" }
+]
+name = "fizzbuzz-api-staging"
+
+# Production Environment
+[env.production]
+kv_namespaces = [
+  { binding = "STATS", id = "your-prod-kv-id", preview_id = "your-prod-preview-id" }
+]
+name = "fizzbuzz-api-prod"
