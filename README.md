@@ -60,4 +60,5 @@ This project implements a simple FizzBuzz API using Go. The API allows users to 
         },
         "hits": 5
     }
+    ```
     ***status 404***: No requests made yet.
