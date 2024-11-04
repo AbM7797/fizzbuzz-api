@@ -33,7 +33,21 @@ This project implements a simple FizzBuzz API using Go. The API allows users to 
     "str1": "fizz",
     "str2": "buzz"
   }
-- **Response**: 
+- **Example Request**:
+    ```
+    curl -X POST http://localhost:8787/api/fizzbuzz \
+        -H "Content-Type: application/json" \
+        -d '{
+            "int1": 3,
+            "int2": 5,
+            "limit": 100,
+            "str1": "fizz",
+            "str2": "buzz"
+        }'
+    ```
+
+- **Response**:
+
     ***status 200***: Returns the FizzBuzz result
     ```json
     {
@@ -45,7 +59,10 @@ This project implements a simple FizzBuzz API using Go. The API allows users to 
 ### Statistics
 
 **GET /api/stats**
-
+- **Example Request**:
+    ```
+    curl -X GET http://localhost:8787/api/stats
+    ```
 - **Response**:
 
     ***status 200***: Returns the most frequently requested parameters and hit count.
@@ -62,3 +79,19 @@ This project implements a simple FizzBuzz API using Go. The API allows users to 
     }
     ```
     ***status 404***: No requests made yet.
+
+### Makefile Commands
+    The Makefile contains several commands for local development, building the application, and deploying it to staging and production environments.
+**Commands**
+- ***dev***: Starts the local development server.
+    ```
+    make dev
+    ```
+- ***deploy-staging***: Deploys the application to the staging environment.
+    ```
+    make deploy-staging
+    ```
+- ***deploy-prod***: Deploys the application to the production environment.
+    ```
+    make deploy-prod
+    ```
