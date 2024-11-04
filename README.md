@@ -81,7 +81,7 @@ This project implements a simple FizzBuzz API using Go. The API allows users to 
     ***status 404***: No requests made yet.
 
 ### Makefile Commands
-    The Makefile contains several commands for local development, building the application, and deploying it to staging and production environments.
+The Makefile contains several commands for local development, building the application, and deploying it to staging and production environments.
 **Commands**
 - ***dev***: Starts the local development server.
     ```
