@@ -32,7 +32,7 @@ This project implements a simple FizzBuzz API using Go. The API allows users to 
     "limit": 100,
     "str1": "fizz",
     "str2": "buzz"
-  }```
+  }
 - **Response**: 
     ***status 200***: Returns the FizzBuzz result
     ```json
@@ -60,5 +60,4 @@ This project implements a simple FizzBuzz API using Go. The API allows users to 
         },
         "hits": 5
     }
-    ```
     ***status 404***: No requests made yet.
